@@ -1,0 +1,53 @@
+.header {
+  background-image: url('./mainsPC.jpeg'); /* ajoute ton image d'arrière-plan ici */
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+div {
+  margin-top: 20px; /* Ajoute une marge de 20px entre chaque div */
+}
+
+.cv-download-btn {
+  border: 2px solid white;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.profile h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.profile p {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.profile-pic {
+  background-image: url('./theo.jpg'); /* Image de profil */
+  background-size: cover;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 0 auto; /* Centrer l'image */
+}

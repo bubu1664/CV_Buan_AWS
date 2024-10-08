@@ -1,0 +1,105 @@
+
+<div class="header">
+  <div class="profile">
+    <h1>Théo Buan</h1>
+    <p>Computer Science Engeneer</p>
+    <div class="profile-pic"></div>
+  </div>
+</div>
+<div>
+  <p-card header="Presentación">
+    <ul class="m-0">
+      <li>Estudiante de ingeniería informática apasionado por la cultura y la tecnología. Busca en la Universidad de Yucatán en Mérida, México, una oportunidad para ampliar mis conocimientos académicos y mi comprensión intercultural.</li>
+    </ul>
+  </p-card>
+</div>
+<div>
+  <p-stepper [linear]="true">
+    <p-stepperPanel header="Experiencia profesional">
+      <ng-template pTemplate="content" let-nextCallback="nextCallback" let-index="index">
+        <div class="flex flex-column h-12rem">
+          <div class="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center align-items-center font-medium">
+            <p-card header="Prácticas de ingeniería">
+              <ul class="m-0">
+                <li>Diseño de un sistema embarcado que permite conocer en todo momento el tipo de implemento acoplado a una pala cargadora agrícola para mejorar el comportamiento global del conjunto tractor-cargadora-implemento. Desarrollo en C y diseño de una HMI utilizando la librería GTK.</li>
+
+              </ul>
+            </p-card>
+            <p-card header="Empleado agrícola">
+              <ul class="m-0">
+                <li>Mantenimiento de equipos, conducción de maquinaria agrícola, recolección de cosechas y alimentación de animales.</li>
+              </ul>
+            </p-card>
+            <p-card header="Recogedor de pedidos">
+              <ul class="m-0">
+                <li> Recogida de los productos pedidos, embalaje y relleno de los paquetes.</li>
+              </ul>
+            </p-card>
+          </div>
+        </div>
+        <div class="flex pt-4 justify-content-end">
+          <p-button label="Next" icon="pi pi-arrow-right" iconPos="right" (onClick)="nextCallback.emit()" />
+        </div>
+      </ng-template>
+    </p-stepperPanel>
+    <p-stepperPanel header="Formacion">
+      <ng-template pTemplate="content" let-prevCallback="prevCallback" let-nextCallback="nextCallback" let-index="index">
+        <div class="flex flex-column h-12rem">
+          <div class="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center align-items-center font-medium">
+            <p-card header="Institut National des Sciences Appliquées - Rennes (35)">
+              <ul class="m-0">
+                <li>FIngeniería electrónica e informática industrial (2 años)</li>
+                <li>Curso preparatorio integrado (Matemáticas, Informática, Mecánica, Química, Industrial y Automática) (2 años)</li>
+              </ul>
+            </p-card>
+            <p-card header="Vía de la investigación y la innovación">
+              <ul class="m-0">
+                <li>Finalización de una tesis sobre el tema: Predicción de la pose del usuario para experiencias de Realidad Extendida (XR)</li>
+                <li>
+                  Familiarización con las herramientas Unity y OpenXR
+                  Estudio bibliográfico y diseño técnico</li>
+              </ul>
+            </p-card>
+          </div>
+        </div>
+        <div class="flex pt-4 justify-content-between">
+          <p-button label="Back" icon="pi pi-arrow-left" (onClick)="prevCallback.emit()" />
+          <p-button label="Next" icon="pi pi-arrow-right" iconPos="right" (onClick)="nextCallback.emit()" />
+        </div>
+      </ng-template>
+    </p-stepperPanel>
+    <p-stepperPanel header="Experiencia en asociaciones">
+      <ng-template pTemplate="content" let-prevCallback="prevCallback" let-index="index">
+        <div class="flex flex-column h-12rem">
+          <div class="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center align-items-center font-medium">
+            <p-card header="Tesorero del Colegio de Abogados (Foy') INSA Rennes">
+              <ul class="m-0">
+                <li>Reposición de existencias y negociación de contratos con el socio Ouest Boissons (1 entrega/semana)</li>
+                <li>Flujo de caja (500 000 euros de facturación anual)</li>
+                <li>1500 miembros de la asociación</li>
+              </ul>
+            </p-card>
+
+          </div>
+        </div>
+        <div class="flex pt-4 justify-content-start">
+          <p-button label="Back" icon="pi pi-arrow-left" (onClick)="prevCallback.emit()" />
+        </div>
+      </ng-template>
+    </p-stepperPanel>
+  </p-stepper>
+</div>
+<div>
+  <p>
+    Lorem ipsum dolor sit amet...
+  </p>
+  <p-divider layout="vertical" />
+  <p>
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...
+  </p>
+  <p-divider layout="vertical" />
+  <p>
+    At vero eos et accusamus et iusto odio dignissimos...
+  </p>
+</div>
+
